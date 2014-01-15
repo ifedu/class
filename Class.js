@@ -22,6 +22,9 @@ var Class = (function() {
         //////PRIVATE METHOD
         //function fnPrivate() {}
     }
+    //////PUBLIC METHOD
+    //me.prototype.ini = function() {};
+
     //////PUBLIC STATIC METHOD
     //me.fnPublicStatic = function() {};
 
@@ -46,7 +49,7 @@ define(function (require) {
     var Class = (function() {
         //////IMPORTS
         //var Fichero = require('./Fichero');
-
+        
         //////PUBLIC STATIC VARS
         //me.varPublicStatic = 11;
 
@@ -67,6 +70,9 @@ define(function (require) {
             //////PRIVATE METHOD
             //function fnPrivate() {}
         }
+        //////PUBLIC METHOD
+        //me.prototype.ini = function() {};
+
         //////PUBLIC STATIC METHOD
         //me.fnPublicStatic = function() {};
 
