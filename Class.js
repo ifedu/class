@@ -1,87 +1,66 @@
-////CLASS EXAMPLE
-//WITHOUT REQUIREJS
-var Class = (function() {
+var ClassWithoutRequirejs = (function() {
     'use strict';
-    //////PUBLIC STATIC VARS
-    //me.varPublicStatic = 11;
+    //////me.publicStaticVar;
 
-    //////PRIVATE STATIC VARS
-    //var foo;
+    //////var privateStaticVar;
 
-    //////CONSTRUCTOR
+    //////constructor
     function me() {
-        //////PUBLIC VARS
-        //this.varPublic = 6;
+        //////this.publicVar;
 
-        //////PRIVATE VARS
-        //var varPrivate = 1;
+        //////var privateVar;
 
-        //////PUBLIC METHOD
-        //this.ini = function() {};
+        //////this.publicMethod = function() {};
 
-        //////PRIVATE METHOD
-        //function fnPrivate() {}
+        //////function privateMethod() {}
     }
-    //////PUBLIC STATIC METHOD
-    //me.fnPublicStatic = function() {};
+    //////me.prototype.publicMethod = function() {};
 
-    //////PRIVATE STATIC METHOD
-    //function fnPrivateStatic() {}
+    //////me.publicStaticMethod = function() {};
+
+    //////function privateStaticMethod() {}
 
     //////INHERITANCE
-    //me.prototype = new SuperClass();
-    ////OBJETO PARENT
+    //me.prototype             = new SuperClass();
     //me.prototype.constructor = me;
-    //me.prototype.parent = SuperClass.prototype;
-    ////CLASS PARENT
-    //me.Parent = SuperClass;
+    //me.prototype.parent      = SuperClass.prototype;
+    //me.superClass            = SuperClass;
 
     return me;
 })();
 
-//WITH REQUIREJS
 define(function (require) {
     'use strict';
-    //CLASS EXAMPLE
-    var Class = (function() {
-        //////IMPORTS
-        //var Fichero = require('./Fichero');
 
-        //////PUBLIC STATIC VARS
-        //me.varPublicStatic = 11;
+    var ClassWithRequirejs = (function() {
+        //var Import = require('./Class');
+        
+        //////me.publicStaticVar;
 
-        //////PRIVATE STATIC VARS
-        //var foo;
+        //////var privateStaticVar;
 
-        //////CONSTRUCTOR
+        //////constructor
         function me() {
-            //////PUBLIC VARS
-            //this.varPublic = 6;
+            //////this.publicVar;
 
-            //////PRIVATE VARS
-            //var varPrivate = 1;
+            //////var privateVar;
 
-            //////PUBLIC METHOD
-            //this.ini = function() {};
+            //////this.publicMethod = function() {};
 
-            //////PRIVATE METHOD
-            //function fnPrivate() {}
+            //////function privateMethod() {}
         }
-        //////PUBLIC STATIC METHOD
-        //me.fnPublicStatic = function() {};
+        //////me.prototype.publicMethod = function() {};
 
-        //////PRIVATE STATIC METHOD
-        //function fnPrivateStatic() {}
+        //////me.publicStaticMethod = function() {};
+
+        //////function privateStaticMethod() {}
 
         //////INHERITANCE
-        //me.prototype = new SuperClass();
-        ////OBJETO PARENT
+        //me.prototype             = new SuperClass();
         //me.prototype.constructor = me;
-        //me.prototype.parent = SuperClass.prototype;
-        ////CLASS PARENT
-        //me.Parent = SuperClass;
-
+        //me.prototype.parent      = SuperClass.prototype;
+        //me.superClass            = SuperClass;
         return me;
     })();
-    return Class;
+    return ClassWithRequirejs;
 });
