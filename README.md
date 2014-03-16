@@ -3,5 +3,5 @@ class
 
 Ejemplo de POO con Javascript de forma nativa.
 
-Demo sin requirejs
+Demo usando Class.js
 http://jsfiddle.net/4faRH/3
